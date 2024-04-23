@@ -22,7 +22,14 @@ $f3->route('GET /', function($f3){
     $f3->set('drink', 'Prime');
     $f3->set('food', 'Chicken');
 
+    // Define a array
+    $fruits = array('apple', 'banana', 'orange');
+    $f3->set('fruitList', $fruits);
 
+
+    // define an associative array
+    $students = array('101' =>'Bob', '102'=>'Alak');
+    $f3->set('studentList', $students);
 
     // Render a view page
     $view = new Template();

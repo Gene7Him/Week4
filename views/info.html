@@ -12,5 +12,15 @@
 <p>My favorite drink is {{@drink}}</p>
 <p>My favorite food is {{@food}}</p>
 
+<h2>A list of fruits</h2>
+<repeat group="{{ @fruitList }}" value="{{ @fruit }}">
+    <p>{{ @fruit }}</p>
+</repeat>
+
+
+<repeat group="{{ @studentList }}" key="{{ @sid }}" value="{{ @name }}">
+<p>{{ @sid }} - {{ @name }}</p>
+</repeat>
+
 </body>
 </html>
